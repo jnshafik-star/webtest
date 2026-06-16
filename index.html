@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vitalhub | Premium File Sharing & News Portal</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Gradient Background Grids -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Sticky Top Header Bar with Two-Toned Brand logo -->
+  <header class="top-header-bar">
+    <div class="top-header-container">
+      <div class="app-logo">
+        <span class="brand-vital">Vital</span><span class="brand-hub">hub</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Unified Bottom Tab Navigation Bar -->
+  <nav class="bottom-nav-bar">
+    <div class="bottom-nav-container">
+      <a href="#/" class="bottom-nav-link" id="nav-home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#/news" class="bottom-nav-link" id="nav-news">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <rect x="6" y="8" width="6" height="8"></rect>
+          <line x1="16" y1="8" x2="18" y2="8"></line>
+          <line x1="16" y1="12" x2="18" y2="12"></line>
+          <line x1="16" y1="16" x2="18" y2="16"></line>
+        </svg>
+        <span>News</span>
+      </a>
+      <a href="#/files" class="bottom-nav-link" id="nav-files">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>Files</span>
+      </a>
+
+      <a href="#/profile" class="bottom-nav-link" id="nav-profile">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Profile</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="app-content">
+    
+    <!-- 1. DASHBOARD VIEW -->
+    <section id="view-dashboard" class="app-view active">
+      <div class="hero-section">
+        <div class="hero-badge">Welcome to the future of sharing</div>
+        <h1>Share files. Read articles.<br>Engage with the community.</h1>
+        <p class="hero-subtitle">Upload your documents, media, or archives and get instant feedback. Stay updated with tech, news, and insights published by others.</p>
+        <div class="hero-actions">
+          <a href="#/files" class="btn btn-primary">Browse Files</a>
+          <a href="#/news" class="btn btn-secondary">Read Articles</a>
+        </div>
+      </div>
+
+
+
+      <!-- Dashboard Showcase Grid -->
+      <div class="showcase-grid">
+        <!-- Left Column -->
+        <div class="dashboard-col">
+          <!-- Widget 1: Tech Shop Slider -->
+          <div class="widget-card widget-shop-promo">
+            <!-- Background Slideshow -->
+            <div class="widget-slideshow">
+              <div class="widget-slide" style="background-image: url('slide_phones.png');"></div>
+              <div class="widget-slide" style="background-image: url('slide_computers.png');"></div>
+              <div class="widget-slide" style="background-image: url('slide_devices.png');"></div>
+            </div>
+            <!-- Dark overlay for text readability -->
+            <div class="slideshow-overlay"></div>
+            
+            <!-- Foreground Content -->
+            <div class="widget-shop-content">
+              <span class="widget-shop-tag">NEW ARRIVALS</span>
+              <h2 class="widget-shop-title">Shop Latest Devices</h2>
+              <p class="widget-shop-caption">Find premium smartphones & computers at unbeatable prices.</p>
+              <a href="#/shop" class="btn-shop-now">
+                <span>SHOP NOW</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="shop-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Recent Uploads Section -->
+          <div class="showcase-box">
+            <div class="box-header">
+              <h2>Recent Uploads</h2>
+              <a href="#/files" class="text-link">View all</a>
+            </div>
+            <div class="dashboard-list" id="dashboard-recent-files">
+              <div class="loading-spinner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Articles Section -->
+        <div class="showcase-box">
+          <div class="box-header">
+            <h2>Trending News & Articles</h2>
+            <a href="#/news" class="text-link">Read all</a>
+          </div>
+          <div class="dashboard-list" id="dashboard-recent-articles">
+            <div class="loading-spinner"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Widgets Grid -->
+      <div class="dashboard-widgets-grid">
+        <!-- Widget 2: Video Slider -->
+        <div class="widget-card widget-video-promo">
+          <!-- Background Slideshow -->
+          <div class="widget-slideshow">
+            <div class="widget-slide" style="background-image: url('funny_slide_1.png');"></div>
+            <div class="widget-slide" style="background-image: url('funny_slide_2.png');"></div>
+            <div class="widget-slide" style="background-image: url('funny_slide_3.png');"></div>
+            <div class="widget-slide" style="background-image: url('funny_slide_4.png');"></div>
+          </div>
+          <!-- Dark overlay for text readability -->
+          <div class="slideshow-overlay"></div>
+          
+          <!-- Foreground Content -->
+          <div class="widget-video-content">
+            <span class="widget-video-tag">TRENDING FUNNY</span>
+            <h2 class="widget-video-title">Funny Clips & Animations</h2>
+            <p class="widget-video-caption">Enjoy the funniest animations and videos curated for you.</p>
+            <a href="#/videos" class="btn-watch-video" id="btn-watch-funny-videos">
+              <!-- Glowing video player icon -->
+              <div class="video-play-icon-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="play-icon"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span>WATCH VIDEO</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Widget 3 -->
+        <div class="widget-card">
+          <div class="widget-header">
+            <span class="widget-num">03</span>
+            <div class="widget-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="widget-icon"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+          </div>
+          <div class="widget-content">
+            <h3>System Portal</h3>
+            <p class="widget-desc">Latest updates and system notifications.</p>
+            <div class="widget-announcement-box">
+              <span class="announcement-tag">Alert</span>
+              <p class="announcement-text">Database schema version 2.4.0 active.</p>
+            </div>
+            <div class="widget-meta-info">
+              <span>Updated: Just now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FILE HUB VIEW -->
+    <section id="view-files" class="app-view">
+      <div class="view-header">
+        <div>
+          <span class="view-tag">Resource Sharing</span>
+          <h1>File Hub</h1>
+        </div>
+        <a href="#/profile" class="btn btn-primary" id="btn-upload-file-shortcut">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          Upload New File
+        </a>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="file-search-input" placeholder="Search files by name, tags, description...">
+        </div>
+        <div class="categories-filter" id="file-category-filters">
+          <button class="filter-btn active" data-category="all">All Files</button>
+          <button class="filter-btn" data-category="documents">Documents</button>
+          <button class="filter-btn" data-category="images">Images</button>
+          <button class="filter-btn" data-category="archives">Archives</button>
+          <button class="filter-btn" data-category="software">Software</button>
+          <button class="filter-btn" data-category="other">Other</button>
+        </div>
+        <div class="sort-wrapper">
+          <select id="file-sort-select" class="custom-select">
+            <option value="newest">Newest First</option>
+            <option value="downloads">Most Downloaded</option>
+            <option value="rating">Highest Rated</option>
+            <option value="name">Alphabetical</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Files Display Grid -->
+      <div class="files-grid" id="files-grid-container">
+        <!-- Dynmically loaded -->
+      </div>
+    </section>
+
+    <!-- 3. NEWS PORTAL VIEW -->
+    <section id="view-news" class="app-view">
+      <div class="view-header">
+        <div>
+          <span class="view-tag">Global Feed</span>
+          <h1>News & Articles</h1>
+        </div>
+        <a href="#/profile" class="btn btn-primary" id="btn-write-article-shortcut">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Write Article
+        </a>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="news-search-input" placeholder="Search articles, topics...">
+        </div>
+        <div class="categories-filter" id="news-category-filters">
+          <button class="filter-btn active" data-category="all">All News</button>
+          <button class="filter-btn" data-category="tech">Technology</button>
+          <button class="filter-btn" data-category="updates">Site Updates</button>
+          <button class="filter-btn" data-category="gaming">Gaming</button>
+          <button class="filter-btn" data-category="general">General</button>
+        </div>
+      </div>
+
+      <!-- News Grid -->
+      <div class="news-grid" id="news-grid-container">
+        <!-- Dynamically loaded -->
+      </div>
+    </section>
+
+
+
+    <!-- 5. USER PROFILE & PUBLISHING WORKSPACE VIEW -->
+    <section id="view-profile" class="app-view">
+      <div class="view-header" style="align-items: center;">
+        <div>
+          <span class="view-tag">Uploader Hub</span>
+          <h1 style="margin: 0; line-height: 1.2;">Profile & Workspace</h1>
+        </div>
+        <div class="profile-settings-btn" title="Settings">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" style="width: 22px; height: 22px; margin: 0;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </div>
+    </div>
+
+    <div class="showcase-grid profile-showcase-grid">
+      <!-- Left: Auth Card (Show if logged out) -->
+        <div class="showcase-box" id="profile-auth-card" style="display: block;">
+          <div class="box-header">
+            <h2 id="auth-title">Sign In</h2>
+          </div>
+          <p class="stat-desc" id="auth-desc" style="margin-bottom: 1.5rem;">Sign in to your <span style="font-weight:600; font-family:var(--font-title);"><span style="color:#fff;">Vital</span><span style="color:var(--accent-violet);">hub</span></span> account to upload files and publish articles.</p>
+          
+          <form id="auth-form" class="creator-form" style="background:transparent; border:none; padding:0; box-shadow:none;">
+            <div class="form-group" style="margin-bottom:1.25rem;">
+              <label for="auth-email">Email Address</label>
+              <input type="email" id="auth-email" required placeholder="name@domain.com" style="padding: 0.8rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%;">
+            </div>
+            <div class="form-group" style="margin-bottom:1.5rem;">
+              <label for="auth-password">Password</label>
+              <input type="password" id="auth-password" required placeholder="••••••••" style="padding: 0.8rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%;">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="btn-auth-submit" style="margin-bottom: 1.25rem;">Sign In</button>
+            <p class="stat-desc" style="text-align: center;">
+              <span id="auth-toggle-prompt">Don't have an account?</span> 
+              <a href="#" id="btn-auth-toggle" style="color: var(--accent-cyan); font-weight:600; text-decoration: underline;">Sign Up</a>
+            </p>
+          </form>
+
+          <!-- Divider -->
+          <div class="auth-divider" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 1.25rem 0; color: var(--text-muted); font-size: 0.85rem;">
+            <span style="flex: 1; height: 1px; background: rgba(255,255,255,0.08);"></span>
+            <span>OR</span>
+            <span style="flex: 1; height: 1px; background: rgba(255,255,255,0.08);"></span>
+          </div>
+
+          <!-- Google Sign-In Button -->
+          <button type="button" class="btn btn-secondary btn-block" id="btn-google-signin" style="margin-bottom: 0.5rem; justify-content: center;">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor; margin-right: 8px;">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+            </svg>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+
+        <!-- Left: Verification Screen (Show after sign up to tell user to verify email) -->
+        <div class="showcase-box" id="profile-verification-card" style="display: none;">
+          <div class="box-header" style="justify-content: center; margin-bottom: 1.5rem;">
+            <h2>Verify Your Email</h2>
+          </div>
+          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; text-align: left; display: flex; gap: 12px; align-items: flex-start;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: var(--accent-emerald); flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <p class="stat-desc" id="verification-message" style="color: #fff; margin: 0; font-size: 0.95rem; line-height: 1.5;"></p>
+          </div>
+          <button type="button" class="btn btn-primary btn-block" id="btn-verification-continue" style="margin-bottom: 1.25rem;">Proceed to Log In</button>
+          <p class="stat-desc" style="text-align: center;">
+            Did not receive the email? 
+            <a href="#" id="btn-verification-resend" style="color: var(--accent-cyan); font-weight:600; text-decoration: underline;">Resend Email</a>
+          </p>
+        </div>
+
+        <!-- Left: Profile Editor (Show if logged in) -->
+        <div class="showcase-box" id="profile-details-card" style="display: none;">
+          <div class="box-header">
+            <h2>Edit Profile</h2>
+          </div>
+          <p class="stat-desc" style="margin-bottom: 1.5rem;">Customize your alias. Changes will be reflected when you share files, write news, or review resources.</p>
+          
+          <div class="profile-avatar-setup" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
+            <div class="avatar-placeholder large-profile-avatar" id="profile-avatar-display" style="width: 70px; height: 70px; font-size: 2rem; font-weight: 800; border-radius: 50%; background: linear-gradient(135deg, var(--accent-cyan) 0%, #0891b2 100%); display:flex; align-items:center; justify-content:center; color: var(--bg-darkest); box-shadow: 0 0 15px var(--accent-cyan-glow);">G</div>
+            <div class="avatar-meta-actions">
+              <h3 id="profile-name-title" style="font-size: 1.3rem; margin-bottom: 2px;">Guest User</h3>
+              <span class="stat-desc" id="profile-tag-title">Community Uploader</span>
+            </div>
+          </div>
+
+          <form id="profile-edit-form" class="creator-form" style="background:transparent; border:none; padding:0; box-shadow:none;">
+            <div class="form-group" style="margin-bottom:1.25rem;">
+              <label for="profile-username">Your Alias / Name</label>
+              <input type="text" id="profile-username" required value="Guest User" placeholder="e.g. CodeWizard" style="padding: 0.8rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%;">
+            </div>
+            <div class="form-group" style="margin-bottom:1.5rem;">
+              <label for="profile-bio">Bio / Title</label>
+              <textarea id="profile-bio" rows="3" placeholder="Tell the community about yourself..." style="padding: 0.8rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%; resize:none;">Contributor at Vitalhub. Passionate coder and designer.</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Save Profile Details</button>
+          </form>
+
+          <!-- Preferences & Utilities -->
+          <div style="margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem;">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: #fff;">Preferences & Accent</h3>
+            <p class="stat-desc" style="margin-bottom: 1rem;">Select your preferred interactive neon theme accent color.</p>
+            <div class="preset-chips theme-chips" id="theme-accent-selectors" style="margin-bottom: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button class="theme-chip-btn active" data-theme="violet" style="--chip-color: hsl(262, 83%, 65%); padding: 0.45rem 0.9rem; font-size: 0.8rem; border-radius: 8px; font-weight:600;">Violet</button>
+              <button class="theme-chip-btn" data-theme="cyan" style="--chip-color: hsl(190, 95%, 50%); padding: 0.45rem 0.9rem; font-size: 0.8rem; border-radius: 8px; font-weight:600;">Cyan</button>
+              <button class="theme-chip-btn" data-theme="pink" style="--chip-color: hsl(330, 85%, 60%); padding: 0.45rem 0.9rem; font-size: 0.8rem; border-radius: 8px; font-weight:600;">Pink</button>
+              <button class="theme-chip-btn" data-theme="emerald" style="--chip-color: hsl(142, 76%, 45%); padding: 0.45rem 0.9rem; font-size: 0.8rem; border-radius: 8px; font-weight:600;">Emerald</button>
+            </div>
+
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: #fff;">Local Database Engine</h3>
+            <p class="stat-desc" style="margin-bottom: 0.75rem;">Monitor browser storage or wipe IndexedDB to restore default states.</p>
+            <div class="db-meta-info" style="margin-bottom: 1.25rem; font-size: 0.85rem; display: flex; flex-direction: column; gap: 6px;">
+              <div>Driver: <strong style="color: var(--accent-cyan);">IndexedDB</strong></div>
+              <div>Storage Size: <span id="others-db-size" style="font-weight:700; color: var(--accent-violet);">Calculating...</span></div>
+            </div>
+            <button class="btn btn-secondary btn-block btn-small" id="btn-clear-db" style="border-color: var(--accent-red); color: var(--accent-red);">Wipe & Reset Database</button>
+          </div>
+          
+          <!-- Sign Out Button -->
+          <div style="margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem;">
+            <button type="button" class="btn btn-secondary btn-block btn-small" id="btn-sign-out" style="border-color: rgba(255,255,255,0.1); color: var(--text-secondary);">Sign Out</button>
+          </div>
+        </div>
+
+        <!-- Right: Upload Workspace Locked (Show if logged out) -->
+        <div class="showcase-box" id="profile-workspace-locked" style="display: block;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; color: var(--text-muted); margin-bottom: 1.5rem; opacity: 0.85; display: block; margin-left: auto; margin-right: auto;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: #fff;">Workspace Locked</h3>
+          <p class="stat-desc" style="max-width: 400px; margin: 0 auto 1.75rem auto;">Please sign in or create a <span style="font-weight:600; font-family:var(--font-title);"><span style="color:#fff;">Vital</span><span style="color:var(--accent-violet);">hub</span></span> account to upload files, share resources, or publish articles.</p>
+          <button type="button" class="btn btn-primary" id="btn-focus-auth">Sign In / Sign Up</button>
+        </div>
+
+        <!-- Right: Upload Workspace (Show if logged in) -->
+        <div class="showcase-box" id="profile-workspace-unlocked" style="display: none;">
+          <div class="workspace-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:1rem;">
+            <h2>Publish Content</h2>
+            <div class="twin-tabs-selector" style="background: rgba(255,255,255,0.02); padding: 0.25rem; border-radius:10px;">
+              <button id="profile-tab-toggle-file" class="tab-toggle active" style="padding: 0.45rem 1rem; font-size: 0.85rem; border-radius:8px;">Upload File</button>
+              <button id="profile-tab-toggle-article" class="tab-toggle" style="padding: 0.45rem 1rem; font-size: 0.85rem; border-radius:8px;">Write Article</button>
+            </div>
+          </div>
+
+          <!-- Profile Panel A: File Upload Form -->
+          <div id="profile-panel-file" class="creator-subpanel active">
+            <form id="file-upload-form">
+              <div class="form-group upload-area-container" style="margin-bottom: 1.25rem;">
+                <div class="drag-drop-zone" id="drag-drop-zone" style="min-height: 160px; border-radius:14px;">
+                  <input type="file" id="file-input" class="hidden-file-input">
+                  <div class="upload-zone-content" id="upload-zone-prompt">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="upload-zone-icon" style="width:32px; height:32px; margin-bottom: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                    <h3 style="font-size:1.05rem;">Drag & Drop File Here</h3>
+                    <p style="font-size:0.75rem;">Or click to browse from device</p>
+                  </div>
+                  <div class="selected-file-display" id="selected-file-display" style="display: none; padding: 1rem;"></div>
+                </div>
+              </div>
+              
+              <div class="form-row" style="margin-bottom: 1.25rem; display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                <div class="form-group">
+                  <label for="file-category">Category</label>
+                  <select id="file-category" class="custom-select" required style="width:100%; min-width:auto;">
+                    <option value="documents">Documents</option>
+                    <option value="images">Images</option>
+                    <option value="archives">Archives</option>
+                    <option value="software">Software</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="file-version">Version (Optional)</label>
+                  <input type="text" id="file-version" placeholder="e.g. 1.0.0" style="padding: 0.75rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%;">
+                </div>
+              </div>
+              
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="file-description">File Description</label>
+                <textarea id="file-description" rows="3" required placeholder="Describe what this file is and how it helps others..." style="padding: 0.75rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%; resize:none;"></textarea>
+              </div>
+              
+              <input type="hidden" id="file-tags" value="shared">
+              <button type="submit" class="btn btn-primary btn-block" id="btn-file-submit">Upload & Share File</button>
+            </form>
+          </div>
+
+          <!-- Profile Panel B: News Writer Form -->
+          <div id="profile-panel-article" class="creator-subpanel" style="display: none;">
+            <form id="article-write-form">
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="article-title">Article Title</label>
+                <input type="text" id="article-title" required placeholder="e.g. The Future of Edge Computing in 2026" style="padding: 0.75rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%;">
+              </div>
+              <div class="form-row" style="margin-bottom: 1rem; display:grid; grid-template-columns: 1fr 1.2fr; gap:1rem;">
+                <div class="form-group">
+                  <label for="article-category">Topic Category</label>
+                  <select id="article-category" class="custom-select" required style="width:100%; min-width:auto;">
+                    <option value="tech">Technology</option>
+                    <option value="updates">Site Updates</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="general">General</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="article-summary">Short Summary</label>
+                  <input type="text" id="article-summary" required placeholder="Brief 1-sentence hook..." style="padding: 0.75rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%;">
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="article-content">Article Body (Supports raw text or HTML)</label>
+                <textarea id="article-content" rows="4" required placeholder="Start writing your news article or technical post here..." style="padding: 0.75rem 1rem; border-radius:10px; background: rgba(255,255,255,0.01); border:1px solid var(--border-glass); color:#fff; width:100%; resize:none;"></textarea>
+              </div>
+
+              <input type="hidden" id="article-image" value="">
+              <button type="submit" class="btn btn-primary btn-block" id="btn-article-submit">Publish Article</button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Platform Stats Accordion Card -->
+        <div class="showcase-box" id="profile-stats-card" style="margin-top: 1rem;">
+          <div class="box-header">
+            <h2>Platform Statistics</h2>
+          </div>
+          <p class="stat-desc" style="margin-bottom: 1.5rem;">Select a metric below to expand and view the platform statistics details.</p>
+          <div class="stats-accordion-container">
+            <!-- Stat Item 1: Total Uploads -->
+            <div class="stats-accordion-item">
+              <button class="stats-accordion-trigger" aria-expanded="false">
+                <span>Total Uploads</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="accordion-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="stats-accordion-content">
+                <div class="stat-value" id="stat-files">0</div>
+                <p class="stat-desc">Community contributed files and resources</p>
+              </div>
+            </div>
+            <!-- Stat Item 2: Downloads -->
+            <div class="stats-accordion-item">
+              <button class="stats-accordion-trigger" aria-expanded="false">
+                <span>Downloads</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="accordion-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="stats-accordion-content">
+                <div class="stat-value" id="stat-downloads">0</div>
+                <p class="stat-desc">Successful community downloads</p>
+              </div>
+            </div>
+            <!-- Stat Item 3: News Articles -->
+            <div class="stats-accordion-item">
+              <button class="stats-accordion-trigger" aria-expanded="false">
+                <span>News Articles</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="accordion-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="stats-accordion-content">
+                <div class="stat-value" id="stat-articles">0</div>
+                <p class="stat-desc">Published community articles and logs</p>
+              </div>
+            </div>
+            <!-- Stat Item 4: Reviews Given -->
+            <div class="stats-accordion-item">
+              <button class="stats-accordion-trigger" aria-expanded="false">
+                <span>Reviews Given</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="accordion-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="stats-accordion-content">
+                <div class="stat-value" id="stat-reviews">0</div>
+                <p class="stat-desc">Star ratings and discussions submitted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ARTICLE DETAIL VIEW -->
+    <section id="view-article-detail" class="app-view">
+      <div class="detail-container">
+        <a href="#/news" class="btn-back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to News
+        </a>
+        
+        <article class="article-full" id="article-detail-content">
+          <!-- Dynamically loaded -->
+        </article>
+
+        <!-- Comments and Reviews Section -->
+        <section class="reviews-section">
+          <div class="reviews-header">
+            <h2>Community Reviews</h2>
+            <div class="rating-summary-bubble">
+              <span class="big-rating" id="article-avg-rating">0.0</span>
+              <span class="rating-stars" id="article-avg-stars">★★★★★</span>
+              <span class="reviews-count" id="article-reviews-count">(0 reviews)</span>
+            </div>
+          </div>
+
+          <!-- Add Review Form -->
+          <div class="add-review-card">
+            <h3>Write a Review</h3>
+            <form id="article-review-form">
+              <div class="rating-selector-group">
+                <span>Your Rating:</span>
+                <div class="star-rating-input" id="article-star-input">
+                  <span class="star-btn" data-value="1">★</span>
+                  <span class="star-btn" data-value="2">★</span>
+                  <span class="star-btn" data-value="3">★</span>
+                  <span class="star-btn" data-value="4">★</span>
+                  <span class="star-btn" data-value="5">★</span>
+                </div>
+                <input type="hidden" id="article-rating-value" value="5">
+              </div>
+              <div class="form-row">
+                <input type="text" id="article-reviewer-name" required placeholder="Your name/alias">
+              </div>
+              <div class="form-group">
+                <textarea id="article-review-text" rows="3" required placeholder="Write your review or thoughts about this article..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Review</button>
+            </form>
+          </div>
+
+          <!-- Reviews Feed -->
+          <div class="reviews-list" id="article-reviews-list">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- 7. SHOP VIEW -->
+    <section id="view-shop" class="app-view">
+      <div class="view-header" style="align-items: center;">
+        <div>
+          <span class="view-tag">Marketplace</span>
+          <h1 id="shop-view-title">Shop Tech & Goods</h1>
+        </div>
+        <!-- Back button, visible on category subpages -->
+        <a href="#/shop" class="btn-back" id="btn-shop-back" style="display: none; margin-bottom: 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Categories
+        </a>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="shop-search-input" placeholder="Search catalog items...">
+        </div>
+      </div>
+
+      <!-- Category Column Selector -->
+      <div class="shop-categories-column" id="shop-categories-list">
+        <!-- Vehicles Card -->
+        <a href="#/shop/vehicles" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_vehicles.png');"></div>
+          <div class="category-row-details">
+            <h3>Vehicles</h3>
+            <p id="count-vehicles">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Fashion Card -->
+        <a href="#/shop/fashion" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_fashion.png');"></div>
+          <div class="category-row-details">
+            <h3>Fashion</h3>
+            <p id="count-fashion">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Phones Card -->
+        <a href="#/shop/phones" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_phones.png');"></div>
+          <div class="category-row-details">
+            <h3>Phones</h3>
+            <p id="count-phones">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Electronics Card -->
+        <a href="#/shop/electronics" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_electronics.png');"></div>
+          <div class="category-row-details">
+            <h3>Electronics</h3>
+            <p id="count-electronics">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Furniture Card -->
+        <a href="#/shop/furniture" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_furniture.png');"></div>
+          <div class="category-row-details">
+            <h3>Furniture</h3>
+            <p id="count-furniture">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Accessories Card -->
+        <a href="#/shop/accessories" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_accessories.png');"></div>
+          <div class="category-row-details">
+            <h3>Accessories</h3>
+            <p id="count-accessories">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Networking products Card -->
+        <a href="#/shop/networking" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_networking.png');"></div>
+          <div class="category-row-details">
+            <h3>Networking products</h3>
+            <p id="count-networking">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Property Card -->
+        <a href="#/shop/property" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_property.png');"></div>
+          <div class="category-row-details">
+            <h3>Property (buildings and land)</h3>
+            <p id="count-property">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Services Card -->
+        <a href="#/shop/services" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_services.png');"></div>
+          <div class="category-row-details">
+            <h3>Services</h3>
+            <p id="count-services">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Repair & construction Card -->
+        <a href="#/shop/repair" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_repair.png');"></div>
+          <div class="category-row-details">
+            <h3>Repair & construction</h3>
+            <p id="count-repair">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Commercial Equipment & Tools Card -->
+        <a href="#/shop/commercial" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_commercial.png');"></div>
+          <div class="category-row-details">
+            <h3>Commercial Equipment & Tools</h3>
+            <p id="count-commercial">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Jobs Card -->
+        <a href="#/shop/jobs" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_jobs.png');"></div>
+          <div class="category-row-details">
+            <h3>Jobs</h3>
+            <p id="count-jobs">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Food and agriculture Card -->
+        <a href="#/shop/food" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_food.png');"></div>
+          <div class="category-row-details">
+            <h3>Food and agriculture</h3>
+            <p id="count-food">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Babies kits Card -->
+        <a href="#/shop/babies" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_babies.png');"></div>
+          <div class="category-row-details">
+            <h3>Babies kits</h3>
+            <p id="count-babies">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Animals & pets Card -->
+        <a href="#/shop/animals" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_animals.png');"></div>
+          <div class="category-row-details">
+            <h3>Animals & pets</h3>
+            <p id="count-animals">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+
+        <!-- Beauty & Personal care Card -->
+        <a href="#/shop/beauty" class="shop-category-row-card">
+          <div class="category-row-image" style="background-image: url('shop_beauty.png');"></div>
+          <div class="category-row-details">
+            <h3>Beauty & Personal care</h3>
+            <p id="count-beauty">Calculating...</p>
+          </div>
+          <div class="category-row-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- Shop Grid -->
+      <div class="shop-grid" id="shop-grid-container" style="display: none;">
+        <!-- Loaded dynamically via app.js -->
+      </div>
+    </section>
+
+    <!-- 8. FUNNY VIDEOS VIEW -->
+    <section id="view-videos" class="app-view">
+      <div class="view-header" style="align-items: center;">
+        <div>
+          <span class="view-tag">Trending Clips</span>
+          <h1>Funny Videos & Animations</h1>
+        </div>
+        <a href="#/" class="btn-back" style="margin-bottom: 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Dashboard
+        </a>
+      </div>
+
+      <!-- Videos Grid -->
+      <div class="videos-grid">
+        <!-- Video Card 1 -->
+        <div class="video-card">
+          <div class="video-container" id="video-wrapper-1">
+            <video id="video-player-1" style="display: block;" playsinline loop muted>
+              <source src="funny_video_1.mp4" type="video/mp4">
+            </video>
+            <!-- Canvas Fallback Player -->
+            <canvas id="video-canvas-1" width="640" height="360" style="display: none;"></canvas>
+            
+            <!-- Custom Play Overlay/Button -->
+            <div class="custom-video-overlay" id="video-overlay-1">
+              <button class="custom-play-btn" id="play-btn-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            
+            <!-- Custom Controls Bar -->
+            <div class="custom-controls-bar">
+              <button class="control-btn" id="ctrl-play-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="ctrl-play-icon-1" style="width: 16px; height: 16px;"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <div class="timeline-slider-wrapper">
+                <div class="timeline-progress" id="progress-bar-1"></div>
+              </div>
+              <span class="video-timer" id="timer-1">0:00 / 0:08</span>
+            </div>
+          </div>
+          <div class="video-info-box">
+            <h3>Cyber-Cat Laser Fail</h3>
+            <p>Funny animation of a cyber-cat chasing a glowing quantum laser pointer (8 seconds).</p>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card">
+          <div class="video-container" id="video-wrapper-2">
+            <video id="video-player-2" style="display: block;" playsinline loop muted>
+              <source src="funny_video_2.mp4" type="video/mp4">
+            </video>
+            <!-- Canvas Fallback Player -->
+            <canvas id="video-canvas-2" width="640" height="360" style="display: none;"></canvas>
+            
+            <!-- Custom Play Overlay/Button -->
+            <div class="custom-video-overlay" id="video-overlay-2">
+              <button class="custom-play-btn" id="play-btn-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            
+            <!-- Custom Controls Bar -->
+            <div class="custom-controls-bar">
+              <button class="control-btn" id="ctrl-play-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="ctrl-play-icon-2" style="width: 16px; height: 16px;"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <div class="timeline-slider-wrapper">
+                <div class="timeline-progress" id="progress-bar-2"></div>
+              </div>
+              <span class="video-timer" id="timer-2">0:00 / 0:10</span>
+            </div>
+          </div>
+          <div class="video-info-box">
+            <h3>Robo-Dance Loop</h3>
+            <p>Cute animated robot performing a funny breakdance loop (10 seconds).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Glowing Plus Button (+) -->
+      <button class="fab-btn fab-btn-pink" id="fab-add-video" title="Add Video">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="fab-icon"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+    </section>
+
+    <!-- 6. FILE DETAIL OVERLAY MODAL -->
+    <div id="file-detail-modal" class="modal-overlay">
+      <div class="modal-card">
+        <button class="modal-close" id="btn-close-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <div class="modal-body">
+          <div class="file-info-header">
+            <div class="file-icon-large" id="modal-file-icon">
+              <!-- Dynamic Icon based on extension -->
+            </div>
+            <div class="file-title-meta">
+              <h2 id="modal-file-name">filename.zip</h2>
+              <div class="modal-meta-badges">
+                <span class="badge" id="modal-file-category">Archives</span>
+                <span class="badge" id="modal-file-size">14.2 MB</span>
+                <span class="badge" id="modal-file-downloads">0 downloads</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-info-grid">
+            <div class="modal-details-col">
+              <div class="modal-section">
+                <h3>Description</h3>
+                <p id="modal-file-desc">File description goes here...</p>
+              </div>
+
+              <div class="modal-section tags-section">
+                <h3>Tags</h3>
+                <div class="modal-tags" id="modal-file-tags">
+                  <!-- Tag elements -->
+                </div>
+              </div>
+
+              <div class="modal-section uploader-section">
+                <div>Uploaded by: <strong id="modal-file-uploader">Author</strong></div>
+                <div>Date: <span id="modal-file-date">2026-06-14</span></div>
+                <div id="modal-file-version-div">Version: <span id="modal-file-version">1.0.0</span></div>
+              </div>
+
+              <!-- DOWNLOAD CALL TO ACTION -->
+              <button class="btn btn-primary btn-large btn-block download-cta-btn" id="btn-download-file">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Download File</span>
+              </button>
+            </div>
+
+            <!-- Reviews and Comments Col -->
+            <div class="modal-reviews-col">
+              <div class="reviews-header">
+                <h3>File Feedback</h3>
+                <div class="rating-summary-bubble">
+                  <span class="big-rating" id="modal-avg-rating">0.0</span>
+                  <span class="rating-stars" id="modal-avg-stars">★★★★★</span>
+                  <span class="reviews-count" id="modal-reviews-count">(0 reviews)</span>
+                </div>
+              </div>
+
+              <!-- Add Review Form inside modal -->
+              <div class="add-review-card scrollable-form">
+                <form id="file-review-form">
+                  <div class="rating-selector-group">
+                    <span>Rating:</span>
+                    <div class="star-rating-input" id="file-star-input">
+                      <span class="star-btn" data-value="1">★</span>
+                      <span class="star-btn" data-value="2">★</span>
+                      <span class="star-btn" data-value="3">★</span>
+                      <span class="star-btn" data-value="4">★</span>
+                      <span class="star-btn" data-value="5">★</span>
+                    </div>
+                    <input type="hidden" id="file-rating-value" value="5">
+                  </div>
+                  <div class="form-row">
+                    <input type="text" id="file-reviewer-name" required placeholder="Your name/alias">
+                  </div>
+                  <div class="form-group">
+                    <textarea id="file-review-text" rows="2" required placeholder="Write comments/feedback..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-small">Submit</button>
+                </form>
+              </div>
+
+              <div class="reviews-list-compact" id="modal-reviews-list">
+                <!-- Compact reviews list -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
